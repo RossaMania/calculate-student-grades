@@ -13,3 +13,9 @@ C:\Users\racle\CODEZZZ\calculate-student-grades\StudentGrades\obj\Debug\net8.0\r
 C:\Users\racle\CODEZZZ\calculate-student-grades\StudentGrades\obj\Debug\net8.0\StudentGrades.pdb
 C:\Users\racle\CODEZZZ\calculate-student-grades\StudentGrades\obj\Debug\net8.0\StudentGrades.genruntimeconfig.cache
 C:\Users\racle\CODEZZZ\calculate-student-grades\StudentGrades\obj\Debug\net8.0\ref\StudentGrades.dll
+C:\Users\racle\CODEZZZ\calculate-student-grades\StudentGrades\bin\Debug\net8.0\NUnit3.TestAdapter.dll
+C:\Users\racle\CODEZZZ\calculate-student-grades\StudentGrades\bin\Debug\net8.0\NUnit3.TestAdapter.pdb
+C:\Users\racle\CODEZZZ\calculate-student-grades\StudentGrades\bin\Debug\net8.0\nunit.engine.dll
+C:\Users\racle\CODEZZZ\calculate-student-grades\StudentGrades\bin\Debug\net8.0\nunit.engine.api.dll
+C:\Users\racle\CODEZZZ\calculate-student-grades\StudentGrades\bin\Debug\net8.0\nunit.engine.core.dll
+C:\Users\racle\CODEZZZ\calculate-student-grades\StudentGrades\bin\Debug\net8.0\testcentric.engine.metadata.dll

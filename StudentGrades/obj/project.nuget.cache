@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Y82GTQUJCkuqXbN252xfFX5okUJW+NnISPf3+hSg4X2E2K0U3qpK/ipIMiCeK9iGaYhhH32Q+MPV3Ns4LU4Ggw==",
+  "dgSpecHash": "IBoM/604tZ/2nsGaUlb/hXK9wbnlNFNsIrK+Ccc0gdM16ITuaiGYnvevUMcZBf85kIVNPks4Qj2MRCvAzooFKA==",
   "success": true,
   "projectFilePath": "C:\\Users\\racle\\CODEZZZ\\calculate-student-grades\\StudentGrades\\StudentGrades.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\racle\\.nuget\\packages\\nunit3testadapter\\4.5.0\\nunit3testadapter.4.5.0.nupkg.sha512"
+  ],
   "logs": []
 }
