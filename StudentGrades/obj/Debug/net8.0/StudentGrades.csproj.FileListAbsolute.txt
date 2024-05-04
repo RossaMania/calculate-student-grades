@@ -1,0 +1,15 @@
+C:\Users\racle\CODEZZZ\calculate-student-grades\StudentGrades\bin\Debug\net8.0\StudentGrades.exe
+C:\Users\racle\CODEZZZ\calculate-student-grades\StudentGrades\bin\Debug\net8.0\StudentGrades.deps.json
+C:\Users\racle\CODEZZZ\calculate-student-grades\StudentGrades\bin\Debug\net8.0\StudentGrades.runtimeconfig.json
+C:\Users\racle\CODEZZZ\calculate-student-grades\StudentGrades\bin\Debug\net8.0\StudentGrades.dll
+C:\Users\racle\CODEZZZ\calculate-student-grades\StudentGrades\bin\Debug\net8.0\StudentGrades.pdb
+C:\Users\racle\CODEZZZ\calculate-student-grades\StudentGrades\obj\Debug\net8.0\StudentGrades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\racle\CODEZZZ\calculate-student-grades\StudentGrades\obj\Debug\net8.0\StudentGrades.AssemblyInfoInputs.cache
+C:\Users\racle\CODEZZZ\calculate-student-grades\StudentGrades\obj\Debug\net8.0\StudentGrades.AssemblyInfo.cs
+C:\Users\racle\CODEZZZ\calculate-student-grades\StudentGrades\obj\Debug\net8.0\StudentGrades.csproj.CoreCompileInputs.cache
+C:\Users\racle\CODEZZZ\calculate-student-grades\StudentGrades\obj\Debug\net8.0\StudentGrades.sourcelink.json
+C:\Users\racle\CODEZZZ\calculate-student-grades\StudentGrades\obj\Debug\net8.0\StudentGrades.dll
+C:\Users\racle\CODEZZZ\calculate-student-grades\StudentGrades\obj\Debug\net8.0\refint\StudentGrades.dll
+C:\Users\racle\CODEZZZ\calculate-student-grades\StudentGrades\obj\Debug\net8.0\StudentGrades.pdb
+C:\Users\racle\CODEZZZ\calculate-student-grades\StudentGrades\obj\Debug\net8.0\StudentGrades.genruntimeconfig.cache
+C:\Users\racle\CODEZZZ\calculate-student-grades\StudentGrades\obj\Debug\net8.0\ref\StudentGrades.dll
