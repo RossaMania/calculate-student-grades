@@ -20,6 +20,9 @@ namespace StudentGrades
 
             int[] studentScores = new int[10];
 
+            // Write the Report Header to the console.
+            Console.WriteLine("Student\t\tGrade\n");
+
             // Loop through the studentNames array and display the names of the students.
             foreach (string name in studentNames)
             {
@@ -55,7 +58,6 @@ namespace StudentGrades
                 currentStudentGrade = (decimal)(sumAssignmentScores) / currentAssignments;
 
                 // Formatted output. The first line is a header line with column titles, followed by the names and scores for each student.
-                Console.WriteLine("Student\t\tGrade\n");
                 Console.WriteLine($"{currentStudent}\t\t{currentStudentGrade}\t?");
 
             }
