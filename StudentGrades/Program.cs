@@ -72,11 +72,11 @@ namespace StudentGrades
                 // Initialize/reset a counter for the number of assignments
                 int gradedAssignments = 0;
 
-                // Int var for the sum of the graded assignments
+                // Int var for the sum of all graded assignments
                 int gradedAssignmentsSum = 0;
 
                 // Int var used to hold the sum of the exam scores.
-                int examScore = 0;
+                int examScoreSum = 0;
 
                 // Decimal var used to hold the average exam score.
                 decimal currentExamAverage = 0;
@@ -100,7 +100,7 @@ namespace StudentGrades
                     if (gradedAssignments <= examAssignments)
 
                         // add the exam score to the sum
-                        examScore = sumAssignmentScores += score;
+                        examScoreSum = sumAssignmentScores += score;
 
                     else
                         // add the extra credit points to the sum - bonus points equal to 10% of an exam score
@@ -109,23 +109,26 @@ namespace StudentGrades
 
                 }
 
-                // Equations used to calculate the average score for each student.
+                // Calculate the average score for each student, including the extra credit.
                 currentStudentGrade = Math.Round((decimal)(sumAssignmentScores) / examAssignments, 2);
 
-                // Equation used to calculate the average exam score for each student.
-                currentExamAverage = (decimal) examScore / examAssignments;
+                // Calculate the average exam score for each student.
+                currentExamAverage = (decimal) examScoreSum / examAssignments;
 
-                // Equation used to calculate the extra credit points for each student.
-                extraCreditSum = gradedAssignmentsSum - examScore;
+                // Calculate the extra credit sum for each student.
+                extraCreditSum = gradedAssignmentsSum - examScoreSum;
 
-                // Equation used to calculate the number of extra credit assignments for each student.
+                // Calculate the number of extra credit assignments for each student.
                 int extraCreditAssignments = gradedAssignments - examAssignments;
 
-                // Equation used to calculate the extra credit score for each student.
+                // Calculate the extra credit score for each student.
                 extraCreditScore = extraCreditSum / extraCreditAssignments;
 
+
+                // Calculate the extra credit points for each student (10% of an exam score) and round to 2 decimal places for display.
                 extraCreditPoints = Math.Round((decimal)extraCreditSum * 10 / 100 / examAssignments, 2);
 
+                // Determine the letter grade for each student based on the current student grade score.
                 if (currentStudentGrade >= 97)
                     currentStudentLetterGrade = "A+";
 
@@ -165,7 +168,7 @@ namespace StudentGrades
                 else
                     currentStudentLetterGrade = "F";
 
-                // Formatted output with the names, scores, and letter grades for each student.
+                // Formatted output with the names, exam scores, overall grades, extra credit score, and extra credit points.
                 Console.WriteLine($"{currentStudent}\t\t{currentExamAverage}\t\t\t{currentStudentGrade}\t{currentStudentLetterGrade}\t\t{extraCreditScore} ({extraCreditPoints} pts)");
 
             }
