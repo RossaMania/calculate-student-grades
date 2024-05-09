@@ -124,6 +124,8 @@ namespace StudentGrades
                 // Equation used to calculate the extra credit score for each student.
                 extraCreditScore = extraCreditSum / extraCreditAssignments;
 
+                extraCreditPoints = extraCreditSum * 10 / 100 / examAssignments;
+
                 if (currentStudentGrade >= 97)
                     currentStudentLetterGrade = "A+";
 
