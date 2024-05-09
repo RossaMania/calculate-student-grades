@@ -72,6 +72,9 @@ namespace StudentGrades
                 // Initialize/reset a counter for the number of assignments
                 int gradedAssignments = 0;
 
+                // Int var for the sum of the graded assignments
+                int gradedAssignmentsSum = 0;
+
                 // Integer var used to hold the exam score.
                 int examScore = 0;
 
@@ -83,6 +86,9 @@ namespace StudentGrades
 
                 // Integer var used to hold the extra credit score.
                 int extraCreditScore = 0;
+
+                // Integer var used to hold the sum of the extra credit scores.
+                int extraCreditSum = 0;
 
                 // Loop through the studentScores array and display the scores of the students.
                 foreach (int score in studentScores)
@@ -98,13 +104,26 @@ namespace StudentGrades
 
                     else
                         // add the extra credit points to the sum - bonus points equal to 10% of an exam score
-                        extraCreditScore = sumAssignmentScores += score / 10;
+                        sumAssignmentScores += score / 10;
+                        gradedAssignmentsSum += score;
 
                 }
 
                 // Equations used to calculate the average score for each student.
                 currentStudentGrade = (decimal)(sumAssignmentScores) / examAssignments;
+
+
+                // Equation used to calculate the average exam score for each student.
                 currentExamScore = (decimal) examScore / examAssignments;
+
+                // Equation used to calculate the number of extra credit assignments for each student.
+                int extraCreditAssignments = gradedAssignments - examAssignments;
+
+                // Equation used to calculate the extra credit points for each student.
+                extraCreditSum = gradedAssignmentsSum - examScore;
+
+                // Equation used to calculate the extra credit score for each student.
+                extraCreditScore = extraCreditSum / extraCreditAssignments;
 
                 if (currentStudentGrade >= 97)
                     currentStudentLetterGrade = "A+";
@@ -146,6 +165,7 @@ namespace StudentGrades
                     currentStudentLetterGrade = "F";
 
                 // Formatted output with the names, scores, and letter grades for each student.
+                Console.WriteLine($"{gradedAssignmentsSum} {extraCreditSum}");
                 Console.WriteLine($"{currentStudent}\t\t{currentExamScore}\t\t\t{currentStudentGrade}\t{currentStudentLetterGrade}\t\t{extraCreditScore} ({extraCreditPoints} pts)");
 
             }
