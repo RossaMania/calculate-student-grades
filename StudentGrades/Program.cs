@@ -50,11 +50,12 @@ namespace StudentGrades
                 // Decimal vars used to hold the calculated average score.
                 decimal currentStudentGrade = 0;
 
+                // initialize/reset a counter for the number of assignments
+                int gradedAssignments = 0;
+
                 // Loop through the sophiaScores array and sum the scores.
                 foreach (int score in studentScores)
                 {
-                    // initialize/reset a counter for the number of assignments
-                    int gradedAssignments = 0;
 
                     // increment the assignment counter
                     gradedAssignments += 1;
