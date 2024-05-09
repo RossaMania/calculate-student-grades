@@ -15,6 +15,14 @@ namespace StudentGrades
             int[] emmaScores = new int[] { 90, 85, 87, 98, 68 };
             int[] loganScores = new int[] { 90, 95, 87, 88, 96 };
 
+            string[] studentNames = new string[] { "Sophia", "Andrew", "Emma", "Logan" };
+
+            foreach (string name in studentNames)
+            {
+                Console.WriteLine($"{name}");
+
+            }
+
             // Integer vars used to hold the sum of the exam scores.
             int sophiaSum = 0;
 
