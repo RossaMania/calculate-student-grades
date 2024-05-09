@@ -29,7 +29,7 @@ namespace StudentGrades
             string currentStudentLetterGrade = "";
 
             // Write the Report Header to the console.
-            Console.WriteLine("Student\t\tGrade\n");
+            Console.WriteLine("Student\t\tExam Score\t\tOverall Grade\t\tExtra Credit\n");
 
             // Loop through the studentNames array and display the names of the students.
             foreach (string name in studentNames)
@@ -63,16 +63,25 @@ namespace StudentGrades
                 else
                     continue;
 
-                // Integer vars used to hold the sum of the exam scores.
+                // Integer var used to hold the sum of the exam scores.
                 int sumAssignmentScores = 0;
 
                 // Decimal vars used to hold the calculated average score.
                 decimal currentStudentGrade = 0;
 
-                // initialize/reset a counter for the number of assignments
+                // Initialize/reset a counter for the number of assignments
                 int gradedAssignments = 0;
 
-                // Loop through the sophiaScores array and sum the scores.
+                // Integer var used to hold the exam score.
+                int examScore = 0;
+
+                // Decimal var used to hold the extra credit points.
+                decimal extraCreditPoints = 0;
+
+                // Integer var used to hold the extra credit score.
+                int extraCreditScore = 0;
+
+                // Loop through the studentScores array and display the scores of the students.
                 foreach (int score in studentScores)
                 {
 
@@ -82,7 +91,7 @@ namespace StudentGrades
                     if (gradedAssignments <= examAssignments)
 
                         // add the exam score to the sum
-                        sumAssignmentScores += score;
+                        examScore = sumAssignmentScores += score;
 
                     else
                         // add the extra credit points to the sum - bonus points equal to 10% of an exam score
@@ -133,7 +142,7 @@ namespace StudentGrades
                     currentStudentLetterGrade = "F";
 
                 // Formatted output with the names, scores, and letter grades for each student.
-                Console.WriteLine($"{currentStudent}\t\t{currentStudentGrade}\t{currentStudentLetterGrade}");
+                Console.WriteLine($"{currentStudent}\t\t{examScore}\t\t\t{currentStudentGrade}\t{currentStudentLetterGrade}\t\t{extraCreditScore} ({extraCreditPoints} pts)");
 
             }
 
