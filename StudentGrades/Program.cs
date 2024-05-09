@@ -15,35 +15,38 @@ namespace StudentGrades
             int[] emmaScores = new int[] { 90, 85, 87, 98, 68 };
             int[] loganScores = new int[] { 90, 95, 87, 88, 96 };
 
+            // Array used to hold the names of the students. The names are in the same order as the scores.
             string[] studentNames = new string[] { "Sophia", "Andrew", "Emma", "Logan" };
 
+            // Loop through the studentNames array and display the names of the students.
             foreach (string name in studentNames)
             {
                 Console.WriteLine($"{name}");
 
+                // Integer vars used to hold the sum of the exam scores.
+                int sophiaSum = 0;
+
+                // Decimal vars used to hold the calculated average score.
+                decimal sophiaScore;
+
+                // Loop through the sophiaScores array and sum the scores.
+                foreach (int score in sophiaScores)
+                {
+                    // add the exam score to the sum
+                    sophiaSum += score;
+                }
+
+                // Equations used to calculate the sum of the assignment scores for each student.
+
+                // Equations used to calculate the average score for each student.
+                sophiaScore = (decimal)sophiaSum / currentAssignments;
+
+                // Formatted output. The first line is a header line with column titles, followed by the names and scores for each student.
+                Console.WriteLine("Student\t\tGrade\n");
+                Console.WriteLine("Sophia:\t\t" + sophiaScore + "\tA-");
+
             }
 
-            // Integer vars used to hold the sum of the exam scores.
-            int sophiaSum = 0;
-
-            // Decimal vars used to hold the calculated average score.
-            decimal sophiaScore;
-
-            // Loop through the sophiaScores array and sum the scores.
-            foreach (int score in sophiaScores)
-            {
-                // add the exam score to the sum
-                sophiaSum += score;
-            }
-
-            // Equations used to calculate the sum of the assignment scores for each student.
-
-            // Equations used to calculate the average score for each student.
-            sophiaScore = (decimal)sophiaSum / currentAssignments;
-
-            // Formatted output. The first line is a header line with column titles, followed by the names and scores for each student.
-            Console.WriteLine("Student\t\tGrade\n");
-            Console.WriteLine("Sophia:\t\t" + sophiaScore + "\tA-");
 
             Console.WriteLine("Press the Enter key to continue");
 
