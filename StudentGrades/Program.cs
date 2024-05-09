@@ -164,7 +164,7 @@ namespace StudentGrades
                     currentStudentLetterGrade = "F";
 
                 // Formatted output with the names, scores, and letter grades for each student.
-                Console.WriteLine($"{gradedAssignmentsSum} {extraCreditSum}");
+                Console.WriteLine($"Total Score Sum: {gradedAssignmentsSum} Total Extra Credit: {extraCreditSum}");
                 Console.WriteLine($"{currentStudent}\t\t{currentExamScore}\t\t\t{currentStudentGrade}\t{currentStudentLetterGrade}\t\t{extraCreditScore} ({extraCreditPoints} pts)");
 
             }
