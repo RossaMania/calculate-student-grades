@@ -75,11 +75,11 @@ namespace StudentGrades
                 // Int var for the sum of the graded assignments
                 int gradedAssignmentsSum = 0;
 
-                // Integer var used to hold the exam score.
+                // Int var used to hold the sum of the exam scores.
                 int examScore = 0;
 
-                // Decimal var used to hold the exam score.
-                decimal currentExamScore = 0;
+                // Decimal var used to hold the average exam score.
+                decimal currentExamAverage = 0;
 
                 // Decimal var used to hold the extra credit points.
                 decimal extraCreditPoints = 0;
@@ -113,13 +113,13 @@ namespace StudentGrades
                 currentStudentGrade = Math.Round((decimal)(sumAssignmentScores) / examAssignments, 2);
 
                 // Equation used to calculate the average exam score for each student.
-                currentExamScore = (decimal) examScore / examAssignments;
-
-                // Equation used to calculate the number of extra credit assignments for each student.
-                int extraCreditAssignments = gradedAssignments - examAssignments;
+                currentExamAverage = (decimal) examScore / examAssignments;
 
                 // Equation used to calculate the extra credit points for each student.
                 extraCreditSum = gradedAssignmentsSum - examScore;
+
+                // Equation used to calculate the number of extra credit assignments for each student.
+                int extraCreditAssignments = gradedAssignments - examAssignments;
 
                 // Equation used to calculate the extra credit score for each student.
                 extraCreditScore = extraCreditSum / extraCreditAssignments;
@@ -166,7 +166,7 @@ namespace StudentGrades
                     currentStudentLetterGrade = "F";
 
                 // Formatted output with the names, scores, and letter grades for each student.
-                Console.WriteLine($"{currentStudent}\t\t{currentExamScore}\t\t\t{currentStudentGrade}\t{currentStudentLetterGrade}\t\t{extraCreditScore} ({extraCreditPoints} pts)");
+                Console.WriteLine($"{currentStudent}\t\t{currentExamAverage}\t\t\t{currentStudentGrade}\t{currentStudentLetterGrade}\t\t{extraCreditScore} ({extraCreditPoints} pts)");
 
             }
 
