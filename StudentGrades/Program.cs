@@ -112,7 +112,6 @@ namespace StudentGrades
                 // Equations used to calculate the average score for each student.
                 currentStudentGrade = (decimal)(sumAssignmentScores) / examAssignments;
 
-
                 // Equation used to calculate the average exam score for each student.
                 currentExamScore = (decimal) examScore / examAssignments;
 
