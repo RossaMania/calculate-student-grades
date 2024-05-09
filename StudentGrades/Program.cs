@@ -75,6 +75,9 @@ namespace StudentGrades
                 // Integer var used to hold the exam score.
                 int examScore = 0;
 
+                // Decimal var used to hold the exam score.
+                decimal currentExamScore = 0;
+
                 // Decimal var used to hold the extra credit points.
                 decimal extraCreditPoints = 0;
 
@@ -95,12 +98,13 @@ namespace StudentGrades
 
                     else
                         // add the extra credit points to the sum - bonus points equal to 10% of an exam score
-                        sumAssignmentScores += score / 10;
+                        extraCreditScore = sumAssignmentScores += score / 10;
 
                 }
 
                 // Equations used to calculate the average score for each student.
                 currentStudentGrade = (decimal)(sumAssignmentScores) / examAssignments;
+                currentExamScore = (decimal) examScore / examAssignments;
 
                 if (currentStudentGrade >= 97)
                     currentStudentLetterGrade = "A+";
@@ -142,7 +146,7 @@ namespace StudentGrades
                     currentStudentLetterGrade = "F";
 
                 // Formatted output with the names, scores, and letter grades for each student.
-                Console.WriteLine($"{currentStudent}\t\t{examScore}\t\t\t{currentStudentGrade}\t{currentStudentLetterGrade}\t\t{extraCreditScore} ({extraCreditPoints} pts)");
+                Console.WriteLine($"{currentStudent}\t\t{currentExamScore}\t\t\t{currentStudentGrade}\t{currentStudentLetterGrade}\t\t{extraCreditScore} ({extraCreditPoints} pts)");
 
             }
 
