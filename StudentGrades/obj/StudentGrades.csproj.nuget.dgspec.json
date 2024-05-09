@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\racle\\CODEZZZ\\calculate-student-grades\\StudentGrades\\StudentGrades.csproj": {}
+    "C:\\Users\\racle\\CODEZZZ\\CsharpProjects\\calculate-student-grades\\StudentGrades\\StudentGrades.csproj": {}
   },
   "projects": {
-    "C:\\Users\\racle\\CODEZZZ\\calculate-student-grades\\StudentGrades\\StudentGrades.csproj": {
+    "C:\\Users\\racle\\CODEZZZ\\CsharpProjects\\calculate-student-grades\\StudentGrades\\StudentGrades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\racle\\CODEZZZ\\calculate-student-grades\\StudentGrades\\StudentGrades.csproj",
+        "projectUniqueName": "C:\\Users\\racle\\CODEZZZ\\CsharpProjects\\calculate-student-grades\\StudentGrades\\StudentGrades.csproj",
         "projectName": "StudentGrades",
-        "projectPath": "C:\\Users\\racle\\CODEZZZ\\calculate-student-grades\\StudentGrades\\StudentGrades.csproj",
+        "projectPath": "C:\\Users\\racle\\CODEZZZ\\CsharpProjects\\calculate-student-grades\\StudentGrades\\StudentGrades.csproj",
         "packagesPath": "C:\\Users\\racle\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\racle\\CODEZZZ\\calculate-student-grades\\StudentGrades\\obj\\",
+        "outputPath": "C:\\Users\\racle\\CODEZZZ\\CsharpProjects\\calculate-student-grades\\StudentGrades\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\racle\\AppData\\Roaming\\NuGet\\NuGet.Config"

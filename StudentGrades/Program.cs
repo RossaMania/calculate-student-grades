@@ -6,48 +6,62 @@ namespace StudentGrades
     {
         static void Main(string[] args)
         {
-          // initialize variables - graded assignments 
+            // initialize variables - graded assignments
             int currentAssignments = 5;
 
-            int sophia1 = 93;
-            int sophia2 = 87;
-            int sophia3 = 98;
-            int sophia4 = 95;
+            int sophia1 = 90;
+            int sophia2 = 86;
+            int sophia3 = 87;
+            int sophia4 = 98;
             int sophia5 = 100;
 
-            int nicolas1 = 80;
-            int nicolas2 = 83;
-            int nicolas3 = 82;
-            int nicolas4 = 88;
-            int nicolas5 = 85;
+            int andrew1 = 92;
+            int andrew2 = 89;
+            int andrew3 = 81;
+            int andrew4 = 96;
+            int andrew5 = 90;
 
-            int zahirah1 = 84;
-            int zahirah2 = 96;
-            int zahirah3 = 73;
-            int zahirah4 = 85;
-            int zahirah5 = 79;
+            int emma1 = 90;
+            int emma2 = 85;
+            int emma3 = 87;
+            int emma4 = 98;
+            int emma5 = 68;
 
-            int jeong1 = 90;
-            int jeong2 = 92;
-            int jeong3 = 98;
-            int jeong4 = 100;
-            int jeong5 = 97;
+            int logan1 = 90;
+            int logan2 = 95;
+            int logan3 = 87;
+            int logan4 = 88;
+            int logan5 = 96;
 
-            int sophiaSum = sophia1 + sophia2 + sophia3 + sophia4 + sophia5;
-            int nicolasSum = nicolas1 + nicolas2 + nicolas3 + nicolas4 + nicolas5;
-            int zahirahSum = zahirah1 + zahirah2 + zahirah3 + zahirah4 + zahirah5;
-            int jeongSum = jeong1 + jeong2 + jeong3 + jeong4 + jeong5;
+            int sophiaSum = 0;
+            int andrewSum = 0;
+            int emmaSum = 0;
+            int loganSum = 0;
 
-            decimal sophiaScore = (decimal) sophiaSum / currentAssignments;
-            decimal nicolasScore = (decimal) nicolasSum / currentAssignments;
-            decimal zahirahScore = (decimal) zahirahSum / currentAssignments;
-            decimal jeongScore = (decimal) jeongSum / currentAssignments;
+            decimal sophiaScore;
+            decimal andrewScore;
+            decimal emmaScore;
+            decimal loganScore;
+
+            sophiaSum = sophia1 + sophia2 + sophia3 + sophia4 + sophia5;
+            andrewSum = andrew1 + andrew2 + andrew3 + andrew4 + andrew5;
+            emmaSum = emma1 + emma2 + emma3 + emma4 + emma5;
+            loganSum = logan1 + logan2 + logan3 + logan4 + logan5;
+
+            sophiaScore = (decimal)sophiaSum / currentAssignments;
+            andrewScore = (decimal)andrewSum / currentAssignments;
+            emmaScore = (decimal)emmaSum / currentAssignments;
+            loganScore = (decimal)loganSum / currentAssignments;
 
             Console.WriteLine("Student\t\tGrade\n");
-            Console.WriteLine("Sophia:\t\t" + sophiaScore + "\tA");
-            Console.WriteLine("Nicolas:\t" + nicolasScore + "\tB");
-            Console.WriteLine("Zahirah:\t" + zahirahScore + "\tB");
-            Console.WriteLine("Jeong:\t\t" + jeongScore + "\tA");
+            Console.WriteLine("Sophia:\t\t" + sophiaScore + "\tA-");
+            Console.WriteLine("Andrew:\t\t" + andrewScore + "\tB+");
+            Console.WriteLine("Emma:\t\t" + emmaScore + "\tB");
+            Console.WriteLine("Logan:\t\t" + loganScore + "\tA-");
+
+            Console.WriteLine("Press the Enter key to continue");
+            Console.ReadLine();
+
         }
     }
 }
