@@ -100,8 +100,8 @@ namespace StudentGrades
                 else
                     currentStudentLetterGrade = "F";
 
-                // Formatted output. The first line is a header line with column titles, followed by the names and scores for each student.
-                Console.WriteLine($"{currentStudent}\t\t{currentStudentGrade}\t?");
+                // Formatted output with the names, scores, and letter grades for each student.
+                Console.WriteLine($"{currentStudent}\t\t{currentStudentGrade}\t{currentStudentLetterGrade}");
 
             }
 
