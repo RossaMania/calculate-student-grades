@@ -7,13 +7,13 @@ namespace StudentGrades
         static void Main(string[] args)
         {
             // initialize variables - graded assignments
-            int currentAssignments = 5;
+            int examAssignments = 5;
 
             // Arrays used to hold the scores of graded assignments for each student.
-            int[] sophiaScores = new int[] { 90, 86, 87, 98, 100 };
-            int[] andrewScores = new int[] { 92, 89, 81, 96, 90 };
-            int[] emmaScores = new int[] { 90, 85, 87, 98, 68 };
-            int[] loganScores = new int[] { 90, 95, 87, 88, 96 };
+            int[] sophiaScores = new int[] { 90, 86, 87, 98, 100, 94, 90 };
+            int[] andrewScores = new int[] { 92, 89, 81, 96, 90, 89 };
+            int[] emmaScores = new int[] { 90, 85, 87, 98, 68, 89, 89, 89 };
+            int[] loganScores = new int[] { 90, 95, 87, 88, 96, 96 };
 
             // Array used to hold the names of the students. The names are in the same order as the scores.
             string[] studentNames = new string[] { "Sophia", "Andrew", "Emma", "Logan" };
@@ -53,13 +53,25 @@ namespace StudentGrades
                 // Loop through the sophiaScores array and sum the scores.
                 foreach (int score in studentScores)
                 {
-                    // add the exam score to the sum
-                    sumAssignmentScores += score;
+                    // initialize/reset a counter for the number of assignments
+                    int gradedAssignments = 0;
+
+                    // increment the assignment counter
+                    gradedAssignments += 1;
+
+                    if (gradedAssignments <= examAssignments)
+
+                        // add the exam score to the sum
+                        sumAssignmentScores += score;
+
+                    else
+                        // add the extra credit points to the sum - bonus points equal to 10% of an exam score
+                        sumAssignmentScores += score / 10;
 
                 }
 
                 // Equations used to calculate the average score for each student.
-                currentStudentGrade = (decimal)(sumAssignmentScores) / currentAssignments;
+                currentStudentGrade = (decimal)(sumAssignmentScores) / examAssignments;
 
                 if (currentStudentGrade >= 97)
                     currentStudentLetterGrade = "A+";
