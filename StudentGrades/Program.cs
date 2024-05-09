@@ -20,7 +20,7 @@ namespace StudentGrades
             int[] gregorScores = new int[] { 91, 91, 91, 91, 91, 91, 91 };
 
             // Array used to hold the names of the students. The names are in the same order as the scores.
-            string[] studentNames = new string[] { "Sophia", "Andrew", "Emma", "Logan" };
+            string[] studentNames = new string[] { "Sophia", "Andrew", "Emma", "Logan", "Becky", "Chris", "Eric", "Gregor" };
 
             // Array used to hold the scores of the students.
             int[] studentScores = new int[10];
