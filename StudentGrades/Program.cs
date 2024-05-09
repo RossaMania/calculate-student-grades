@@ -18,7 +18,11 @@ namespace StudentGrades
             // Array used to hold the names of the students. The names are in the same order as the scores.
             string[] studentNames = new string[] { "Sophia", "Andrew", "Emma", "Logan" };
 
+            // Array used to hold the scores of the students.
             int[] studentScores = new int[10];
+
+            // String used to hold the letter grade for each student.
+            string currentStudentLetterGrade = "";
 
             // Write the Report Header to the console.
             Console.WriteLine("Student\t\tGrade\n");
@@ -56,6 +60,45 @@ namespace StudentGrades
 
                 // Equations used to calculate the average score for each student.
                 currentStudentGrade = (decimal)(sumAssignmentScores) / currentAssignments;
+
+                if (currentStudentGrade >= 97)
+                    currentStudentLetterGrade = "A+";
+
+                else if (currentStudentGrade >= 93)
+                    currentStudentLetterGrade = "A";
+
+                else if (currentStudentGrade >= 90)
+                    currentStudentLetterGrade = "A-";
+
+                else if (currentStudentGrade >= 87)
+                    currentStudentLetterGrade = "B+";
+
+                else if (currentStudentGrade >= 83)
+                    currentStudentLetterGrade = "B";
+
+                else if (currentStudentGrade >= 80)
+                    currentStudentLetterGrade = "B-";
+
+                else if (currentStudentGrade >= 77)
+                    currentStudentLetterGrade = "C+";
+
+                else if (currentStudentGrade >= 73)
+                    currentStudentLetterGrade = "C";
+
+                else if (currentStudentGrade >= 70)
+                    currentStudentLetterGrade = "C-";
+
+                else if (currentStudentGrade >= 67)
+                    currentStudentLetterGrade = "D+";
+
+                else if (currentStudentGrade >= 63)
+                    currentStudentLetterGrade = "D";
+
+                else if (currentStudentGrade >= 60)
+                    currentStudentLetterGrade = "D-";
+
+                else
+                    currentStudentLetterGrade = "F";
 
                 // Formatted output. The first line is a header line with column titles, followed by the names and scores for each student.
                 Console.WriteLine($"{currentStudent}\t\t{currentStudentGrade}\t?");
