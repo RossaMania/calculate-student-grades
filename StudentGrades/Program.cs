@@ -110,7 +110,7 @@ namespace StudentGrades
                 }
 
                 // Equations used to calculate the average score for each student.
-                currentStudentGrade = (decimal)(sumAssignmentScores) / examAssignments;
+                currentStudentGrade = Math.Round((decimal)(sumAssignmentScores) / examAssignments, 2);
 
                 // Equation used to calculate the average exam score for each student.
                 currentExamScore = (decimal) examScore / examAssignments;
@@ -124,7 +124,7 @@ namespace StudentGrades
                 // Equation used to calculate the extra credit score for each student.
                 extraCreditScore = extraCreditSum / extraCreditAssignments;
 
-                extraCreditPoints = extraCreditSum * 10 / 100 / examAssignments;
+                extraCreditPoints = Math.Round((decimal)extraCreditSum * 10 / 100 / examAssignments, 2);
 
                 if (currentStudentGrade >= 97)
                     currentStudentLetterGrade = "A+";
