@@ -1,24 +1,44 @@
 # Student Grades Calculator
 
-This project calculates the grades of four students: Sophia, Nicolas, Zahirah, and Jeong. Each student has five graded assignments. The grades are calculated by averaging the scores of the assignments. The final grade is then determined based on the average score.
+This project calculates the grades of several students based on their performance in graded assignments. Each student has a set of assignments, and their grades are determined by averaging their scores. Additionally, extra credit points are awarded based on performance.
 
-This project is a part of the (New) Foundational C# with Microsoft course by freeCodeCamp and Microsoft.
+This project is developed as a part of the (New) Foundational C# with Microsoft course by freeCodeCamp and Microsoft.
 
 ## Project Structure
 
-The project consists of two main parts:
+The project consists of the following components:
 
-1. `StudentGrades`: This is the main application that calculates and displays the students' grades.
+1. **`StudentGrades`**: The main application responsible for calculating and displaying the students' grades.
 
-2. `StudentGrades.Tests`: This is a test project that verifies the correctness of the grade calculation.
+2. **`StudentGrades.Tests`**: A test project designed to ensure the accuracy of the grade calculation algorithm.
 
-## Running the Application
+## Usage
 
-To run the application, navigate to the `StudentGrades` directory and run the command `dotnet run`.
+### Running the Application
 
-## Running the Tests
+To execute the application:
 
-To run the tests, navigate to the `StudentGrades.Tests` directory and run the command `dotnet test`.
+1. Navigate to the `StudentGrades` directory.
+2. Run the command `dotnet run`.
+
+### Running the Tests
+
+To perform tests:
+
+1. Navigate to the `StudentGrades.Tests` directory.
+2. Execute the command `dotnet test`.
+
+## Changes in Program.cs
+
+### New Features
+
+- **Extra Credit Calculation**: The program now calculates extra credit points based on performance in assignments.
+- **Enhanced Output**: The output now includes additional information such as overall grade, extra credit score, and extra credit points.
+
+### Modifications
+
+- **Refactored Code**: The code has been refactored for better readability and maintainability.
+- **Improved Logic**: Logic for calculating grades and extra credit has been enhanced.
 
 ## Built With
 
