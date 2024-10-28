@@ -1,3 +1,5 @@
+Thank you for checking out my project! Connect with me on LinkedIn! https://www.linkedin.com/in/ross-clettenberg/
+
 # Student Grades Calculator
 
 This project calculates the grades of several students based on their performance in graded assignments. Each student has a set of assignments, and their grades are determined by averaging their scores. Additionally, extra credit points are awarded based on performance.
